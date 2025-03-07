@@ -1,0 +1,14 @@
+python VGT/object_detection/create_grid_input.py \
+--pdf 'path-to-pdf-file' \
+--output 'path-to-output-folder' \
+--tokenizer 'google-bert/bert-base-uncased' \
+--model 'doclaynet'
+
+
+## For DocLayNet
+
+python VGT/object_detection/create_grid_input.py \
+  --pdf '/Users/jaheergoulam/PycharmProjects/stage_VGT/pdf_documents_test/STM32U385CG.pdf' \
+  --output '/Users/jaheergoulam/PycharmProjects/stage_VGT/pkl_documents_output' \
+  --tokenizer 'google-bert/bert-base-uncased' \
+  --model 'doclaynet'

@@ -1,0 +1,27 @@
+# Ignorer les fichiers système macOS
+.DS_Store
+**/.DS_Store
+
+# Ignorer les fichiers spécifiques à PyCharm
+.idea/
+
+# Ignorer l'environnement virtuel Python
+.venv/
+**/.venv/
+
+# Ignorer tout sauf le fichier .gitkeep dans certains dossiers
+DocLayNet_core/*
+!DocLayNet_core/.gitkeep
+
+img_documents_output/*
+!img_documents_output/.gitkeep
+
+pkl_documents_output/*
+!pkl_documents_output/.gitkeep
+
+layoutlm-base-uncased/*
+!layoutlm-base-uncased/.gitkeep
+
+# Ignorer le dossier models sauf le fichier .gitkeep
+models/*
+!models/.gitkeeplayoutlm-base-uncased/*

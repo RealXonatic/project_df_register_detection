@@ -1,0 +1,4 @@
+python VGT/object_detection/pdf2img.py \
+--pdf '/Users/jaheergoulam/PycharmProjects/stage_VGT/pdf_documents_test/STM32U385CG.pdf' \
+--output '/Users/jaheergoulam/PycharmProjects/stage_VGT/img_documents_output' \
+--format 'png'
