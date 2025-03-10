@@ -1,0 +1,29 @@
+python VGT/object_detection/inference.py \
+--image_root '/DocBank_root_path/DocBank/DocBank_500K_ori_img/' \
+--grid_root '/DocBank_root_path/DocBank/VGT_docbank_grid_pkl/' \
+--image_name '1.tar_1401.0001.gz_infoingames_without_metric_arxiv_47_ori' \
+--dataset docbank \
+--output_root <your_output_dir> / \
+--config Configs/cascade/docbank_VGT_cascade_PTM.yaml \
+--opts MODEL.WEIGHTS  <finetuned_checkpoint_file_path>
+
+## Pour inférence avec DocLayNet
+
+python VGT/object_detection/inference_post_processing.py \
+  --image_root "/Users/jaheergoulam/PycharmProjects/stage_VGT/img_documents_output/" \
+  --grid_root "/Users/jaheergoulam/PycharmProjects/stage_VGT/pkl_documents_output/" \
+  --image_name "page_0" \
+  --dataset "doclaynet" \
+  --output_root "/Users/jaheergoulam/PycharmProjects/stage_VGT/Results/" \
+  --config "VGT/object_detection/Configs/cascade/doclaynet_VGT_cascade_PTM.yaml" \
+  --opts MODEL.WEIGHTS "models/doclaynet_VGT_model.pth" 
+  
+
+## version chatGPT
+
+python /Users/jaheergoulam/PycharmProjects/stage_VGT/VGT/object_detection/inference_post_processing.py \ 
+    --image_path "/Users/jaheergoulam/PycharmProjects/stage_VGT/img_documents_output/page_10.png" \                                                                        
+    --grid_path "/Users/jaheergoulam/PycharmProjects/stage_VGT/pkl_documents_output/page_10.pdf.pkl" \
+    --output_root "/Users/jaheergoulam/PycharmProjects/stage_VGT/Results" \                                                            
+    --config_file "/Users/jaheergoulam/PycharmProjects/stage_VGT/VGT/object_detection/Configs/cascade/doclaynet_VGT_cascade_PTM.yaml" \
+    --weights "models/doclaynet_VGT_model.pth"
